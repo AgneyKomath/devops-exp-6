@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  user:
+    build: ./user-service
+    ports:
+      - "3000:3000"
+  order:
+    build: ./order-service
+    ports:
+      - "4000:4000"
